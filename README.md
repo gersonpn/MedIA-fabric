@@ -1,8 +1,8 @@
 # MedIA — Observatório Nacional de Saúde
 
-> **Documentação técnica, funcional e arquitetural do projeto em um único README**  
-> **Revisão:** 22 de outubro de 2026 · **Estado:** projeto em desenvolvimento / piloto  
-> **Percurso:** fonte pública → busca → extração → transformação → armazenamento → modelo dimensional → indicadores → dashboards.  
+> **Documentação técnica, funcional e arquitetural do projeto em um único README**
+> **Revisão:** 22 de outubro de 2026 · **Estado:** projeto em desenvolvimento / piloto
+> **Percurso:** fonte pública → busca → extração → transformação → armazenamento → modelo dimensional → indicadores → dashboards.
 > **Escopo:** os notebooks serão descritos somente na etapa final; esta versão documenta a arquitetura, a interpretação dos indicadores e as páginas apresentadas.
 
 Este README documenta a arquitetura de engenharia de dados, as decisões de modelagem, os relacionamentos lógicos, as regras DAX, as medidas HTML, os filtros e as três páginas existentes. Preserva tabelas explicativas, exemplos técnicos, diagramas visuais e restrições de interpretação. Os exemplos de código são identificados como **referências técnicas** quando não foram exportados diretamente do modelo semântico publicado.
@@ -1078,7 +1078,7 @@ Os filtros **Período, Território e Fonte** só são semanticamente corretos qu
 <!-- ![Tela 01 — Visão Geral](imagens/tela_01_visao_geral.png) -->
 
 #### Componentes e interpretação — Tela 01
-
+![Tela 01 — Visão Geral](imagens/tela_01_visao_geral.png)
 **Objetivo:** oferecer panorama executivo do recorte de dados integrado, sem afirmar que SIH e SIM possuem a mesma abrangência temporal e territorial.
 
 ##### Função de cada filtro da Visão Geral
@@ -1114,6 +1114,9 @@ A **seleção de Período** usa os atributos de ano e mês da `gold_dim_tempo`: 
 - **Fonte:** SIH/SIM somente se a interação fizer sentido para os indicadores; não deixar um seletor comum ocultar resultados de uma fonte sem explicação.
 
 ### Tela 02 — Internações Hospitalares
+![Tela 02 — Internações Hospitalares](imagens/tela_02_internacoes.png)
+
+
 
 > **Captura da Tela 02 — Internações Hospitalares (pendente).** Adicione o arquivo `imagens/tela_02_internacoes.png` e habilite o Markdown abaixo. A descrição funcional completa está documentada independentemente da imagem.
 >
@@ -1160,9 +1163,7 @@ O **Período** restringe a competência das Autorizações de Internação Hospi
 
 ### Tela 03 — Mortalidade
 
-> **Captura da Tela 03 — Mortalidade (pendente).** Adicione o arquivo `imagens/tela_03_mortalidade.png` e habilite o Markdown abaixo. A descrição funcional completa está documentada independentemente da imagem.
->
-<!-- ![Tela 03 — Mortalidade](imagens/tela_03_mortalidade.png) -->
+![Tela 03 — Mortalidade](imagens/tela_03_mortalidade.png)
 
 #### Componentes e interpretação — Tela 03
 
@@ -1566,9 +1567,3 @@ Os notebooks e a operação dos pipelines foram **intencionalmente deixados para
 ### Inclusão das imagens de tela no repositório
 
 As imagens devem ser incluídas na pasta `imagens/`. Quando disponíveis, as referências Markdown comentadas nas seções **Tela 01**, **Tela 02** e **Tela 03** podem ser ativadas. **A documentação permanece concentrada em um único `README.md`.**
-
-```markdown
-![Tela 01 — Visão Geral](imagens/tela_01_visao_geral.png)
-![Tela 02 — Internações Hospitalares](imagens/tela_02_internacoes.png)
-![Tela 03 — Mortalidade](imagens/tela_03_mortalidade.png)
-```
