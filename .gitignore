@@ -1,0 +1,20 @@
+# Dados e segredos
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.parquet
+*.dbc
+*.dbf
+*.csv
+*.jsonl
+**/bronze/
+**/silver/
+**/gold/
+**/checkpoints/
+**/controle/
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.vscode/

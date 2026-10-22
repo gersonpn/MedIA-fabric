@@ -1,0 +1,7 @@
+# Dependencias de referencia para Microsoft Fabric.
+# pyspark e fornecido pelo runtime do Fabric.
+pysus==2.11.7
+nest_asyncio>=1.6
+pandas>=2.2
+pyarrow>=11
+pyreaddbc>=2.0.4
